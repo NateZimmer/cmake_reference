@@ -6,6 +6,8 @@ A CMake reference of compiling sepperate static libs and bringing them in via `f
 ```mermaid
 ---
 title: Example CMake Lib/Find Package
+config:
+  theme: 'neutral'
 ---
 classDiagram
 app : main()
