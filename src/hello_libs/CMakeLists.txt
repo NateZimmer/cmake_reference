@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(hello C)
+project(hello_lib C)
 
 # Add all .c files in this directory to the executable
 #file(GLOB SOURCES "*.c")

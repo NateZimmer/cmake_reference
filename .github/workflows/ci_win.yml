@@ -1,0 +1,20 @@
+name: Windows Build
+
+on:
+  push:
+    branches: [ '*' ] # all branches 
+  pull_request:
+    branches: [ '*' ]
+
+jobs:
+  build:
+    runs-on: windows-2025
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Build app/libs 
+        run: |
+          cmake -B out
+          cmake --build out
+      - name: Run app
+        run: Debug\HelloWorld.exe

@@ -5,3 +5,6 @@
 *.pdb
 *.a
 *.lib
+.vscode/settings.json
+Debug
+out
